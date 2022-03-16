@@ -1,0 +1,79 @@
+﻿https://infura.io/dashboard/ethereum/3b336abb599245e8ae5e4be1123eb70c/settings
+https://docs.nethereum.com/en/latest/getting-started/
+http://playground.nethereum.com/csharp/id/1001
+https://github.com/Nethereum/Nethereum/
+
+
+PM > Install-Package Nethereum.Web3
+PM > Install-Package Nethereum.Portable
+dotnet add package Nethereum.Web3 
+dotnet add package Nethereum.Portable
+
+Main Libraries
+Project Source	Nuget_Package	Description
+Nethereum.Portable	NuGet version	Portable class library combining all the different libraries in one package
+Nethereum.Web3	NuGet version	Ethereum Web3 Class Library simplifying the interaction via RPC. Includes contract interaction, deployment, transaction, encoding / decoding and event filters
+Nethereum.Unity		Unity3d integration, libraries can be found in the Nethereum releases
+Nethereum.Geth	NuGet version	Nethereum.Geth is the extended Web3 library for Geth. This includes the non-generic RPC API client methods to interact with the Go Ethereum Client (Geth) like Admin, Debug, Miner
+Nethereum.Quorum	NuGet version	Extension to interact with Quorum, the permissioned implementation of Ethereum supporting data privacy created by JP Morgan
+Nethereum.Parity	NuGet version	Nethereum.Parity is the extended Web3 library for Parity. Including the non-generic RPC API client methods to interact with Parity. (WIP)
+Core Libraries
+Project Source	Nuget_Package	Description
+Nethereum.Generators	NuGet version	Code generation of Nethereum integration classes using the Solidity Abi and Bin
+Nethereum.BlockchainProcessing	NuGet version	Nethereum.BlockchainProcessing Ethereum blockchain processing allowing to crawl Blocks, Transactions, TransactionReceipts and Logs (Event) for storage and / or using custom handlers like queuing , search, etc
+Nethereum.JsonRpc.WebSocketClient	NuGet version	Nethereum.JsonRpc WebSocketClient
+Nethereum.RPC.Reactive	NuGet version	Nethereum.RPC.Reactive, Reactive Client Subscriptions (WebSockets) and RPC Extensions for Nethereum
+Nethereum.ENS	NuGet version	Nethereum.ENS Ethereum Name service library
+Nethereum.Autogen.ContractApi	NuGet version	Generates dot net code for Ethereum (Solidity) contracts. Will automatically create dot net files based on .abi files within the target project during pre build. The generated code language is derived from the project file extension (csproj, vbproj, fsproj). More control can be gained by adding a Nethereum.Generator.config file to the root of the project. This describes the abi contracts and the code generation options for each (output folders, namespaces etc).
+Nethereum.Parity.Reactive	NuGet version	Generates dot net code for Ethereum (Solidity) contracts. Will automatically create dot net files based on .abi files within the target project during pre build. The generated code language is derived from the project file extension (csproj, vbproj, fsproj). More control can be gained by adding a Nethereum.Generator.config file to the root of the project. This describes the abi contracts and the code generation options for each (output folders, namespaces etc).
+Nethereum.TestRPCRunner	NuGet version	TestRpc embedded in Nethereum to simplify smart contract and Ethereum integration testing
+Nethereum.Model	NuGet version	Nethereum.Model Ethereum Core Moel Class Library
+Nethereum.Pantheon	NuGet version	Nethereum.Pantheon is the extended Web3 library for Pantheon. including the non-generic RPC API client methods to interact with the Java Ethereum Client (Pantheon) Admin, Debug, Miner, EEA, Clique, IBFT.
+Nethereum.Signer.Trezor	NuGet version	Nethereum.Signer.Trezor provides the External Signing capability for Ethereum transactions and Messages using Trezor Hardware wallets
+Nethereum.Signer.AzureKeyVault	NuGet version	Netherum.Signer.AzureKeyVault provides the External Signing capability for Ethereum transactions and Messages using Azure Key Vault
+Nethereum.TestRPCRunner.Net45	NuGet version	TestRpc embedded in Nethereum to simplify smart contract and Ethereum integration testing
+Nethereum.ABI	NuGet version	Encoding and decoding of ABI Types, functions, events of Ethereum contracts
+Nethereum.EVM		Ethereum Virtual Machine API
+Nethereum.Hex	NuGet version	HexTypes for encoding and decoding String, BigInteger and different Hex helper functions
+Nethereum.RPC	NuGet version	Core RPC Class Library to interact via RCP with an Ethereum client
+Nethereum.JsonRpc.Client	NuGet version	Nethereum JsonRpc.Client core library to use in conjunction with either the JsonRpc.RpcClient, the JsonRpc.IpcClient or other custom Rpc provider
+Nethereum.JsonRpc.RpcClient	NuGet version	JsonRpc Rpc Client provider using Edjcase.JsonRpc.Client
+Nethereum JsonRpc IpcClient	NuGet version	JsonRpc IpcClient provider for Windows, Linux and Unix
+Nethereum.RLP	NuGet version	RLP encoding and decoding
+Nethereum.KeyStore	NuGet version	Keystore generation, encryption and decryption for Ethereum key files using the Web3 Secret Storage definition
+Nethereum.Signer	NuGet version	Nethereum signer library to sign and verify messages, RLP and transactions using an Ethereum account private key
+Nethereum.Contracts	NuGet version	Core library to interact via RPC with Smart contracts in Ethereum
+Nethereum.IntegrationTesting		Integration testing module
+Nethereum.HDWallet	NuGet version	Generates an HD tree of Ethereum compatible addresses from a randomly generated seed phrase (using BIP32 and BIP39)
+Note: IPC is supported for Windows, Unix and Linux but is only available using Nethereum.Web3, not Nethereum.Portable
+
+Smart contract API Libraries
+Project Source	Nuget_Package	Description
+Nethereum.StandardTokenEIP20	NuGet version	Nethereum.StandardTokenEIP20 Ethereum Service to interact with ERC20 compliant contracts
+Nethereum.Uport	NuGet version	Uport registry library
+Nethereum.ENS	NuGet version	Ethereum Name service library (original ENS) WIP to upgrade to latest ENS
+Utilities
+Project Source	Description
+Nethereum.Generator.Console	A dot net core CLI tool which generates Nethereum code based on abi files
+Nethereum.Console	A collection of command line utilities to interact with Ethereum and account management
+Training modules
+Project Source	Description
+Nethereum.Tutorials	Tutorials to run on VS Studio
+Code templates
+Source	Description
+Keystore generator	Keystore file generator
+Faucet	Web application template for an Ether faucet
+Nethereum Flappy	The source code files for the Unity3d game integrating with Ethereum
+Nethereum Game Sample	Sample game demonstrating how to integrate Nethereum with UrhoSharp’s SamplyGame to build a cross-platform game interacting with Ethereum
+Nethereum UI wallet sample	Cross platform wallet example using Nethereum, Xamarin.Forms and MvvmCross, targeting: Android, iOS, Windows Mobile, Desktop (windows 10 uwp), IoT with the Raspberry PI and Xbox.
+
+https://docs.nethereum.com/en/latest/nugets/
+
+http://playground.nethereum.com/csharp/id/1003
+
+https://trufflesuite.com/ganache/index.html
+
+
+
+
+
